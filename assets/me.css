@@ -1,9 +1,19 @@
-/* my colour on top of the phos stylesheet: Aegean teal where phos uses yellow */
-:root { --yellow: #1f6f78; --on-yellow: #ffffff; --ink-on-yellow: #ffffff; --accent: #1a5c63; --on-accent: #ffffff;
-        --line: rgba(31, 111, 120, 0.3); --line-strong: rgba(31, 111, 120, 0.6); }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --accent: #6fc7c9; --line: rgba(111, 199, 201, 0.18); --line-strong: rgba(111, 199, 201, 0.4); }
+/* my palette on top of the phos stylesheet: Aegean teal, terracotta, dark ink */
+:root {
+  --teal: #1f6f78; --teal-deep: #174f5f; --terracotta: #b5532f; --ink: #12131f;
+  --yellow: var(--teal); --on-yellow: #ffffff; --ink-on-yellow: #ffffff;
+  --accent: #1a5c63; --on-accent: #ffffff;
+  --line: rgba(31, 111, 120, 0.3); --line-strong: rgba(31, 111, 120, 0.6);
 }
-:root[data-theme="dark"] { --accent: #6fc7c9; --line: rgba(111, 199, 201, 0.18); --line-strong: rgba(111, 199, 201, 0.4); }
-.copy:hover { background: #2a8591; }
-.band .button { color: #1f6f78; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --accent: #6fc7c9; --terracotta: #c4633d; --line: rgba(111, 199, 201, 0.18); --line-strong: rgba(111, 199, 201, 0.4); }
+}
+:root[data-theme="dark"] { --accent: #6fc7c9; --terracotta: #c4633d; --line: rgba(111, 199, 201, 0.18); --line-strong: rgba(111, 199, 201, 0.4); }
+
+.hero { background: linear-gradient(135deg, var(--teal) 0%, var(--teal-deep) 100%); }
+h2 mark { background: var(--terracotta); color: #ffffff; }
+.band { background: var(--terracotta); }
+.band .button { background: #ffffff; color: var(--terracotta); }
+footer { background: var(--ink); color: #f3ece2; border-top: 0; }
+footer .brand { color: #f3ece2; }
+footer a { color: #6fc7c9; }
