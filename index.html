@@ -1,8 +1,111 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>rclone (personal)</title></head>
-<body style="font-family:sans-serif;max-width:40em;margin:3em auto;padding:0 1em;line-height:1.5">
-<h1>rclone (personal)</h1>
-<p>A personal Google Drive sync setup, used only by its owner to back up and organise their own files with <a href="https://rclone.org">rclone</a>.</p>
-<p>It is not offered to anyone else. <a href="privacy.html">Privacy policy</a></p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thrasos Sazeides</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<meta name="description" content="Thrasos Sazeides: computer science at the University of Cyprus. Systems, security and machine learning.">
+<meta name="theme-color" content="#eac400">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="">vcTaz</a>
+      <ul>
+        <li><a href="#projects">Projects</a></li><li><a href="https://phos.sh">phos</a></li>
+        <li class="gh"><a href="https://github.com/vcTaz">GitHub</a></li>
+        <li><button class="theme" type="button" id="theme-toggle" aria-label="Switch to dark mode"><svg class="t sun-i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/></svg><svg class="t moon-i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"/></svg></button></li>
+      </ul>
+    </nav>
+    <div class="page-head">
+      <h1>Thrasos Sazeides</h1>
+      <p class="tag">Computer science at the University of Cyprus. Systems, security and machine learning.</p>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="statement">
+    <div class="wrap">
+      <h2>Close to <mark>the machine.</mark></h2>
+      <p class="intro">I like operating systems, parallel code, binary security and machine learning on real data. Most of what I build is small and runs on Linux.</p>
+    </div>
+  </section>
+  <section class="values" id="projects">
+    <div class="wrap">
+      <p class="eyebrow">Projects</p>
+      <h2>Things I have <mark>built.</mark></h2>
+      <div class="cards">
+        <a class="card" href="https://github.com/vcTaz/pthread_schedule">
+          <h3>pthread_schedule</h3>
+          <p>A compact C11 library that spreads loop iterations over POSIX threads, with static, dynamic and guided scheduling.</p>
+          <ul class="facts"><li>C</li><li>Parallelism</li></ul>
+          <span class="go">On GitHub →</span></a>
+        <a class="card" href="https://github.com/vcTaz/pwnlab">
+          <h3>pwnlab</h3>
+          <p>An interactive CLI that analyses i386 ELF binaries: it finds the mitigations and the overflow offset, picks a strategy and writes the exploit script.</p>
+          <ul class="facts"><li>Python</li><li>Security</li></ul>
+          <span class="go">On GitHub →</span></a>
+        <a class="card" href="https://github.com/vcTaz/CS448-CERN-Dielectron-Invariant-Mass-Prediction">
+          <h3>CERN dielectron mass</h3>
+          <p>A team project predicting the invariant mass of dielectron collision events from the CERN/CMS open dataset.</p>
+          <ul class="facts"><li>Python</li><li>Machine learning</li></ul>
+          <span class="go">On GitHub →</span></a>
+        <a class="card" href="https://github.com/vcTaz/epl499_group_project_7">
+          <h3>Tweet sentiment</h3>
+          <p>A group project: a full pipeline for tweet sentiment classification with classical models and feature engineering.</p>
+          <ul class="facts"><li>Python</li><li>NLP</li></ul>
+          <span class="go">On GitHub →</span></a>
+        <a class="card" href="https://github.com/vcTaz/strata-security-evaluation">
+          <h3>Strata security review</h3>
+          <p>A security evaluation of Strata, a keyboard-first Linux file manager, and what it would need to change.</p>
+          <ul class="facts"><li>Rust</li><li>Security</li></ul>
+          <span class="go">On GitHub →</span></a>
+        <a class="card" href="https://github.com/vcTaz/cloudlab-microsuite-profile">
+          <h3>µSuite on CloudLab</h3>
+          <p>A CloudLab profile for running the µSuite microservice benchmarks.</p>
+          <ul class="facts"><li>Python</li><li>Data centers</li></ul>
+          <span class="go">On GitHub →</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap join">
+      <div>
+        <p class="eyebrow">phos</p>
+        <h2>I also work on phos: light, well-made tools for the Linux desktop.</h2>
+      </div>
+      <a class="button" href="https://phos.sh">Visit phos.sh</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span class="brand">Thrasos Sazeides</span>
+    <ul>
+      <li><a href="https://github.com/vcTaz">GitHub</a></li>
+      <li><a href="https://phos.sh">phos.sh</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+(function () {
+  var root = document.documentElement, key = "theme", btn = document.getElementById("theme-toggle");
+  var system = window.matchMedia("(prefers-color-scheme: dark)");
+  function current() { return root.dataset.theme || (system.matches ? "dark" : "light"); }
+  function label() { btn.setAttribute("aria-label", current() === "dark" ? "Switch to light mode" : "Switch to dark mode"); }
+  try { var saved = localStorage.getItem(key); if (saved === "dark" || saved === "light") root.dataset.theme = saved; } catch (e) {}
+  label();
+  btn.addEventListener("click", function () {
+    var next = current() === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem(key, next); } catch (e) {}
+    label();
+  });
+  system.addEventListener("change", label);
+})();
+</script>
+</body>
+</html>
