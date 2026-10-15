@@ -1,0 +1,9 @@
+/* my colour on top of the phos stylesheet: Aegean teal where phos uses yellow */
+:root { --yellow: #1f6f78; --on-yellow: #ffffff; --ink-on-yellow: #ffffff; --accent: #1a5c63; --on-accent: #ffffff;
+        --line: rgba(31, 111, 120, 0.3); --line-strong: rgba(31, 111, 120, 0.6); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --accent: #6fc7c9; --line: rgba(111, 199, 201, 0.18); --line-strong: rgba(111, 199, 201, 0.4); }
+}
+:root[data-theme="dark"] { --accent: #6fc7c9; --line: rgba(111, 199, 201, 0.18); --line-strong: rgba(111, 199, 201, 0.4); }
+.copy:hover { background: #2a8591; }
+.band .button { color: #1f6f78; }
